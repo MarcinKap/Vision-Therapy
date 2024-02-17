@@ -39,6 +39,7 @@ dependencies {
     // Android libraries
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(project(":core:coroutines"))
 
     coreLibraryDesugaring(libs.android.tools.desugar)
 
@@ -57,6 +58,8 @@ dependencies {
     implementation(libs.coil.compose)
 
     // Testing
+    implementation(projects.core.testing.screenshots)
+
     androidTestImplementation(platform(libs.androidx.compose.bom))
 
     testImplementation(platform(libs.junit.bom))

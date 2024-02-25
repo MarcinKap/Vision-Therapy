@@ -17,15 +17,17 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "example-project"
+rootProject.name = "example"
 include(
     ":app",
     ":core:networking",
     ":core:coroutines",
     ":core:design",
-    ":core:testing:mockwebserver",
+    ":core:testing:compose",
     ":core:testing:endpoints",
+    ":core:testing:mockwebserver",
     ":core:testing:screenshots",
+    ":core:testing:ui",
     ":data:product",
     ":feature:start",
     ":feature:main",

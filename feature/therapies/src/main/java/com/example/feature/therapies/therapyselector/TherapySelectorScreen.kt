@@ -1,0 +1,39 @@
+package com.example.feature.therapies.therapyselector
+
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.example.feature.therapies.therapyselector.ui.TherapySelectorSuccessContent
+import com.ramcosta.composedestinations.annotation.Destination
+
+@Destination
+@Composable
+fun TherapySelectorScreen(
+    viewModel: TherapySelectorViewModel = hiltViewModel(),
+) {
+    val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val navigationEvent by viewModel.navigationEventFlow.collectAsStateWithLifecycle()
+
+    TherapySelectorContent(
+        uiState = uiState,
+        onAction = viewModel::onAction,
+    )
+}
+
+@Composable
+private fun TherapySelectorContent(
+    uiState: TherapySelectorUiState,
+    onAction: (TherapySelectorUiAction) -> Unit,
+) {
+    when (uiState.state) {
+        TherapiesDataState.Loading, TherapiesDataState.Init -> {} // TODO
+
+        is TherapiesDataState.Error -> {} // TODO
+
+        is TherapiesDataState.Success -> TherapySelectorSuccessContent(
+            therapiesData = uiState.state,
+            onAction = onAction,
+        )
+    }
+}

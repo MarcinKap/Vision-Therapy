@@ -37,7 +37,7 @@ android {
 dependencies {
     implementation(projects.core.design)
     implementation(projects.feature.start)
-    implementation(projects.feature.main)
+    implementation(projects.feature.therapies)
 
     compileOnly(libs.androidx.compose.compiler)
 

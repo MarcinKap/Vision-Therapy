@@ -1,7 +1,6 @@
 package com.example.navigation
 
 import androidx.navigation.NavController
-import com.example.feature.main.mainscreen.MainNavigator
 import com.example.feature.start.startscreen.StartNavigator
 import com.ramcosta.composedestinations.navigation.navigate
 import com.ramcosta.composedestinations.spec.NavGraphSpec
@@ -12,17 +11,12 @@ class CommonNavGraphNavigator(
     private val navGraph: NavGraphSpec,
     private val navController: NavController,
 ) :
-    StartNavigator,
-    MainNavigator {
+    StartNavigator {
     override fun showMainScreen() {
-        navController.navigate(NavGraphs.main) {
+        navController.navigate(NavGraphs.therapies) {
             popUpTo(navGraph.startDestination.route) {
                 inclusive = true
             }
         }
-    }
-
-    override fun onBackPressed() {
-        navController.navigateUp()
     }
 }

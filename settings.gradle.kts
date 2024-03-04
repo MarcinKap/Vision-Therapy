@@ -17,7 +17,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "example"
+rootProject.name = "Vision-Therapy"
 include(
     ":app",
     ":core:networking",
@@ -30,7 +30,7 @@ include(
     ":core:testing:ui",
     ":data:product",
     ":feature:start",
-    ":feature:main",
+    ":feature:therapies",
 )
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

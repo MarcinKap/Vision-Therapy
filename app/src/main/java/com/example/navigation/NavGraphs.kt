@@ -1,7 +1,7 @@
 package com.example.navigation
 
-import com.example.feature.main.mainscreen.composable.destinations.MainScreenDestination
 import com.example.feature.start.startscreen.composable.destinations.StartScreenDestination
+import com.example.feature.therapies.destinations.TherapySelectorScreenDestination
 import com.ramcosta.composedestinations.dynamic.routedIn
 import com.ramcosta.composedestinations.spec.DestinationSpec
 import com.ramcosta.composedestinations.spec.NavGraphSpec
@@ -18,13 +18,13 @@ object NavGraphs {
             .associateBy { it.route }
     }
 
-    val main = object : NavGraphSpec {
+    val therapies = object : NavGraphSpec {
         override val route = "main"
 
-        override val startRoute = MainScreenDestination routedIn this
+        override val startRoute = TherapySelectorScreenDestination routedIn this
 
         override val destinationsByRoute = listOf<DestinationSpec<*>>(
-            MainScreenDestination,
+            TherapySelectorScreenDestination,
         ).routedIn(this)
             .associateBy { it.route }
     }
@@ -36,7 +36,7 @@ object NavGraphs {
 
         override val nestedNavGraphs = listOf(
             start,
-            main,
+            therapies,
         )
     }
 }

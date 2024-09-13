@@ -31,6 +31,7 @@ include(
     ":data:product",
     ":feature:start",
     ":feature:therapies",
+    ":feature:visits",
 )
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

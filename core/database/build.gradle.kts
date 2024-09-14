@@ -33,6 +33,8 @@ android {
 }
 
 dependencies {
+    implementation(projects.core.model)
+
     // Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)

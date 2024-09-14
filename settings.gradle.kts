@@ -24,6 +24,7 @@ include(
     ":core:coroutines",
     ":core:design",
     ":core:database",
+    ":core:model",
     ":core:testing:compose",
     ":core:testing:endpoints",
     ":core:testing:mockwebserver",

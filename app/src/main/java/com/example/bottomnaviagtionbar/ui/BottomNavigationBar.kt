@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.example.bottomnaviagtionbar.BottomNavigationDestination
+import com.example.core.design.theme.VisionAppTheme
 import com.ramcosta.composedestinations.utils.navGraph
 
 @Composable
@@ -46,7 +47,7 @@ fun BottomNavigationBar(
 @Preview(showBackground = true)
 @Composable
 private fun BottomNavItemPreview() {
-    MaterialTheme {
+    VisionAppTheme {
         BottomNavigation(backgroundColor = Color.White) {
             previewBottomNavItemList.forEachIndexed { _, data ->
                 BottomNavigationItem(

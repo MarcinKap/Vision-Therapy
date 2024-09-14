@@ -29,7 +29,7 @@ sealed class NavBarItem(
     )
 
     data object Calendar : NavBarItem(
-        title = R.string.root_calendar,
+        title = R.string.root_work_schedule,
         icon = DS.outline_calendar_today_24,
         activeIcon = DS.baseline_calendar_today_24,
     )

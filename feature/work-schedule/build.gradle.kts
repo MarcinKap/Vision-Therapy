@@ -10,7 +10,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.feature.calendar"
+    namespace = "com.example.feature.workschedule"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
@@ -29,7 +29,7 @@ android {
 
 ksp {
     arg("compose-destinations.mode", "destinations")
-    arg("compose-destinations.moduleName", "calendar")
+    arg("compose-destinations.moduleName", "workschedule")
 }
 
 dependencies {

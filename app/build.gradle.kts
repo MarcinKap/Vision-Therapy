@@ -41,7 +41,7 @@ dependencies {
     implementation(projects.feature.therapies)
     implementation(projects.feature.visits)
     implementation(projects.feature.customers)
-    implementation(projects.feature.calendar)
+    implementation(projects.feature.workSchedule)
     implementation(projects.feature.tasks)
 
     compileOnly(libs.androidx.compose.compiler)

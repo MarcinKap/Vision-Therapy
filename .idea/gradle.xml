@@ -37,12 +37,12 @@
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/data/product" />
             <option value="$PROJECT_DIR$/feature" />
-            <option value="$PROJECT_DIR$/feature/calendar" />
             <option value="$PROJECT_DIR$/feature/customers" />
             <option value="$PROJECT_DIR$/feature/start" />
             <option value="$PROJECT_DIR$/feature/tasks" />
             <option value="$PROJECT_DIR$/feature/therapies" />
             <option value="$PROJECT_DIR$/feature/visits" />
+            <option value="$PROJECT_DIR$/feature/work-schedule" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

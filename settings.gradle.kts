@@ -33,7 +33,7 @@ include(
     ":feature:therapies",
     ":feature:visits",
     ":feature:customers",
-    ":feature:calendar",
+    ":feature:work-schedule",
     ":feature:tasks",
 )
 

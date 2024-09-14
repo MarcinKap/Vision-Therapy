@@ -84,6 +84,7 @@ fun RowScope.BottomNavigationItem(
             Text(
                 text = stringResource(id = title),
                 color = textColor,
+                maxLines = 1,
             )
             VerticalSpacer(height = 4.dp)
         }

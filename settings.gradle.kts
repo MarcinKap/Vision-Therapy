@@ -23,6 +23,7 @@ include(
     ":core:networking",
     ":core:coroutines",
     ":core:design",
+    ":core:database",
     ":core:testing:compose",
     ":core:testing:endpoints",
     ":core:testing:mockwebserver",

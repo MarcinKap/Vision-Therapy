@@ -1,11 +1,11 @@
 package com.example.navigation
 
-import com.example.feature.calendar.calendar.destinations.CalendarScreenDestination
-import com.example.feature.customers.customers.destinations.CustomersScreenDestination
+import com.example.feature.people.people.destinations.PeopleScreenDestination
 import com.example.feature.start.startscreen.composable.destinations.StartScreenDestination
 import com.example.feature.tasks.tasks.destinations.TasksScreenDestination
 import com.example.feature.therapies.destinations.TherapySelectorScreenDestination
 import com.example.feature.visits.visits.destinations.VisitsScreenDestination
+import com.example.feature.workschedule.workschedule.destinations.WorkScheduleScreenDestination
 import com.ramcosta.composedestinations.dynamic.routedIn
 import com.ramcosta.composedestinations.spec.DestinationSpec
 import com.ramcosta.composedestinations.spec.NavGraphSpec
@@ -33,13 +33,13 @@ object NavGraphs {
             .associateBy { it.route }
     }
 
-    val customers = object : NavGraphSpec {
-        override val route = "customers"
+    val people = object : NavGraphSpec {
+        override val route = "people"
 
-        override val startRoute = CustomersScreenDestination routedIn this
+        override val startRoute = PeopleScreenDestination routedIn this
 
         override val destinationsByRoute = listOf<DestinationSpec<*>>(
-            CustomersScreenDestination,
+            PeopleScreenDestination,
         ).routedIn(this)
             .associateBy { it.route }
     }
@@ -55,13 +55,13 @@ object NavGraphs {
             .associateBy { it.route }
     }
 
-    val calendar = object : NavGraphSpec {
-        override val route = "calendar"
+    val workSchedule = object : NavGraphSpec {
+        override val route = "work-schedule"
 
-        override val startRoute = CalendarScreenDestination routedIn this
+        override val startRoute = WorkScheduleScreenDestination routedIn this
 
         override val destinationsByRoute = listOf<DestinationSpec<*>>(
-            CalendarScreenDestination,
+            WorkScheduleScreenDestination,
         ).routedIn(this)
             .associateBy { it.route }
     }
@@ -84,9 +84,9 @@ object NavGraphs {
 
         override val nestedNavGraphs = listOf(
             start,
-            customers,
+            people,
             visits,
-            calendar,
+            workSchedule,
             tasks,
             therapies,
         )

@@ -2,17 +2,11 @@ package com.example.navigation
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.unit.dp
 import androidx.navigation.NavDestination
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavHostController
@@ -38,7 +32,8 @@ internal fun AppNavigation(
         navGraph = NavGraphs.root,
         startRoute = startRoute,
         modifier = modifier
-            .background(Color.LightGray.copy(0.2f)),
+            .fillMaxSize()
+            .background(MaterialTheme.colorScheme.background),
         dependenciesContainerBuilder = {
             dependency(currentNavigator())
         },

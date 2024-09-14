@@ -39,7 +39,7 @@ internal class BottomNavigationElementComposer @Inject constructor() : Navigatio
     override fun composeSecondElement(): Flow<BottomNavigationDestination?> = flowOf(
         BottomNavigationDestination(
             item = NavBarItem.Customers,
-            screen = NavGraphs.customers,
+            screen = NavGraphs.people,
         ),
     )
 
@@ -53,7 +53,7 @@ internal class BottomNavigationElementComposer @Inject constructor() : Navigatio
     override fun composeFourthElement(): Flow<BottomNavigationDestination?> = flowOf(
         BottomNavigationDestination(
             item = NavBarItem.Calendar,
-            screen = NavGraphs.calendar,
+            screen = NavGraphs.workSchedule,
         ),
     )
 

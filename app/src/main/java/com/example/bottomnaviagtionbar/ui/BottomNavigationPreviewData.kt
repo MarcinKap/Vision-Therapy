@@ -3,7 +3,7 @@ package com.example.bottomnaviagtionbar.ui
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
-import com.example.R
+import com.example.core.translations.R.string as S
 import com.example.core.design.R.drawable as DS
 
 data class BottomNavigationPreviewData(
@@ -15,14 +15,14 @@ data class BottomNavigationPreviewData(
 
 val previewBottomNavigationDataSelected = BottomNavigationPreviewData(
     selected = true,
-    title = R.string.root_home,
+    title = S.root_home,
     icon = DS.outline_home_24,
     activeIcon = DS.baseline_home_24,
 )
 
 val previewBottomNavigationDataNotSelected = BottomNavigationPreviewData(
     selected = false,
-    title = R.string.root_home,
+    title = S.root_home,
     icon = DS.outline_home_24,
     activeIcon = DS.baseline_home_24,
 )

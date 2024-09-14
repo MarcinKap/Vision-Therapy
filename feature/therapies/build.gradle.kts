@@ -35,11 +35,12 @@ ksp {
 dependencies {
     implementation(projects.core.design)
     implementation(projects.core.coroutines)
-    implementation(projects.data.product)
+    implementation(projects.core.translations)
 
     // Android libraries
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(project(":core:networking"))
 
     coreLibraryDesugaring(libs.android.tools.desugar)
 

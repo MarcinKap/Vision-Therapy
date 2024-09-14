@@ -34,6 +34,7 @@ ksp {
 
 dependencies {
     implementation(projects.core.design)
+    implementation(projects.core.translations)
 
     // Android libraries
     implementation(libs.androidx.core)

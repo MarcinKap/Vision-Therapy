@@ -2,7 +2,6 @@ package com.example.bottomnaviagtionbar.ui
 
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationDefaults
-import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color

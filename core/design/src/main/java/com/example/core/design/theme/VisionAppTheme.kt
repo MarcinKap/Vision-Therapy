@@ -58,7 +58,7 @@ private val ExampleLightColorScheme = lightColorScheme(
     onError = Color.White,
     errorContainer = Red90,
     onErrorContainer = Red10,
-    background = Grey90,
+    background = Grey99,
     onBackground = Grey10,
     surface = Grey99,
     onSurface = Grey10,
@@ -72,19 +72,9 @@ private val ExampleLightColorScheme = lightColorScheme(
 @Composable
 fun VisionAppTheme(
     isDarkTheme: Boolean = isSystemInDarkTheme(),
-    isDynamicColor: Boolean = true,
     content: @Composable () -> Unit,
 ) {
-    val dynamicColor = isDynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
     val myColorScheme = when {
-        dynamicColor && isDarkTheme -> {
-            dynamicDarkColorScheme(LocalContext.current)
-        }
-
-        dynamicColor && !isDarkTheme -> {
-            dynamicLightColorScheme(LocalContext.current)
-        }
-
         isDarkTheme -> ExampleDarkColorScheme
         else -> ExampleLightColorScheme
     }

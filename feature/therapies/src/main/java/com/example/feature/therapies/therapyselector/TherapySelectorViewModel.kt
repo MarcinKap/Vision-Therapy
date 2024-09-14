@@ -2,8 +2,6 @@ package com.example.feature.therapies.therapyselector
 
 import androidx.lifecycle.ViewModel
 import com.example.core.coroutines.IO
-import com.example.data.product.usecase.CategoriesUseCase
-import com.example.data.product.usecase.ProductPageUseCase
 import com.example.feature.therapies.therapyselector.preview.successDownloadedData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
@@ -15,8 +13,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class TherapySelectorViewModel @Inject constructor(
-    private val productPageUseCase: ProductPageUseCase,
-    private val categoriesUseCase: CategoriesUseCase,
     @IO private val ioDispatcher: CoroutineDispatcher,
 ) : ViewModel() {
 

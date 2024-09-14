@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Example-Project</string>
+    <string name="root_home">Home</string>
+    <string name="root_people">People</string>
+    <string name="root_visits">Visits</string>
+    <string name="root_work_schedule">Schedule</string>
+    <string name="root_tasks">Tasks</string>
+    <string name="start_screen_welcome">Welcome!</string>
+    <string name="start_screen_description">This is example ecommerce app</string>
+    <string name="start_screen_get_started">Get started</string>
+    <string name="main_screen_top_bar">Main Screen</string>
+    <string name="main_screen_categories_title">Categories</string>
+    <string name="main_screen_last_viewed_title">Last viewed</string>
+    <string name="workScheduleScreen_title">Work schedule</string>
+    <string name="visitsScreen_title">Visits</string>
+    <string name="tasksScreen_title">Tasks</string>
+    <string name="peopleScreen_title">People</string>
+    <string name="therapiesScreen_title">Therapies</string>
+    <string name="peopleScreen_selectorTab_workers">Workers</string>
+    <string name="peopleScreen_selectorTab_clients">Clients</string>
+</resources>

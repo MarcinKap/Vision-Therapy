@@ -31,11 +31,11 @@ import com.example.bottomnaviagtionbar.NavBarVisibilityController
 import com.example.bottomnaviagtionbar.ui.BottomNavigationBar
 import com.example.core.design.shadow.BottomShadow
 import com.example.core.design.theme.VisionAppTheme
-import com.example.feature.calendar.calendar.destinations.CalendarScreenDestination
-import com.example.feature.customers.customers.destinations.CustomersScreenDestination
+import com.example.feature.people.people.destinations.PeopleScreenDestination
 import com.example.feature.tasks.tasks.destinations.TasksScreenDestination
 import com.example.feature.therapies.destinations.TherapySelectorScreenDestination
 import com.example.feature.visits.visits.destinations.VisitsScreenDestination
+import com.example.feature.workschedule.workschedule.destinations.WorkScheduleScreenDestination
 import com.example.navigation.AppNavigation
 import com.example.navigation.NavGraphs
 import com.google.accompanist.navigation.material.BottomSheetNavigator
@@ -91,6 +91,7 @@ class MainActivity : AppCompatActivity() {
                     val isNavBarVisible by navBarVisibility.isVisible().collectAsStateWithLifecycle(false)
 
                     Scaffold(
+                        modifier = Modifier.fillMaxSize(),
                         bottomBar = {
                             AnimatedVisibility(
                                 visible = isNavBarVisible,
@@ -131,9 +132,9 @@ class MainActivity : AppCompatActivity() {
 
     private val bottomNavigationRoutes by lazy {
         listOf(
-            CustomersScreenDestination routedIn NavGraphs.customers,
+            PeopleScreenDestination routedIn NavGraphs.people,
             VisitsScreenDestination routedIn NavGraphs.visits,
-            CalendarScreenDestination routedIn NavGraphs.calendar,
+            WorkScheduleScreenDestination routedIn NavGraphs.workSchedule,
             TasksScreenDestination routedIn NavGraphs.tasks,
             TherapySelectorScreenDestination routedIn NavGraphs.therapies,
         ).map { it.route }

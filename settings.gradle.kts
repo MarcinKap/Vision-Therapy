@@ -28,6 +28,7 @@ include(
     ":core:testing:mockwebserver",
     ":core:testing:screenshots",
     ":core:testing:ui",
+    ":core:translations",
     ":data:product",
     ":feature:start",
     ":feature:therapies",

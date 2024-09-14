@@ -22,7 +22,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.example.core.design.R
+import com.example.core.translations.R.string as S
+import com.example.core.design.R as DS
 import com.example.core.design.theme.VisionAppTheme
 import com.example.feature.start.startscreen.StartNavigationEvent
 import com.example.feature.start.startscreen.StartNavigator
@@ -69,15 +70,15 @@ internal fun StartScreenContent(
         ) {
             Image(
                 modifier = Modifier.width(150.dp),
-                painter = painterResource(id = R.drawable.ecommerce_shop_app),
+                painter = painterResource(id = DS.drawable.ecommerce_shop_app),
                 contentDescription = null,
             )
             Text(
-                text = stringResource(id = R.string.start_screen_welcome),
+                text = stringResource(id = S.start_screen_welcome),
                 style = MaterialTheme.typography.headlineSmall,
             )
             Text(
-                text = stringResource(id = R.string.start_screen_description),
+                text = stringResource(id = S.start_screen_description),
                 style = MaterialTheme.typography.bodyMedium,
             )
         }
@@ -93,7 +94,7 @@ private fun BottomButton(onClick: () -> Unit) {
             .testTag(GET_STARTED_BUTTON_TEST_TAG),
         onClick = onClick,
     ) {
-        Text(text = stringResource(id = R.string.start_screen_get_started))
+        Text(text = stringResource(id = S.start_screen_get_started))
     }
 }
 

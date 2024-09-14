@@ -37,6 +37,7 @@ android {
 dependencies {
     implementation(projects.core.coroutines)
     implementation(projects.core.design)
+    implementation(projects.core.translations)
     implementation(projects.feature.start)
     implementation(projects.feature.therapies)
     implementation(projects.feature.visits)

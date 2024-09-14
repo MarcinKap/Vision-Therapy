@@ -1,4 +1,10 @@
 <resources>
+    <string name="app_name">Example-Project</string>
+    <string name="root_home">Home</string>
+    <string name="root_customers">Customers</string>
+    <string name="root_visits">Visits</string>
+    <string name="root_work_schedule">Schedule</string>
+    <string name="root_tasks">Tasks</string>
     <string name="start_screen_welcome">Welcome!</string>
     <string name="start_screen_description">This is example ecommerce app</string>
     <string name="start_screen_get_started">Get started</string>

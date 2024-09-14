@@ -32,6 +32,9 @@ include(
     ":feature:start",
     ":feature:therapies",
     ":feature:visits",
+    ":feature:customers",
+    ":feature:calendar",
+    ":feature:tasks",
 )
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")

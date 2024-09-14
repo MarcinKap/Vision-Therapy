@@ -29,7 +29,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.core.design.theme.ExampleTheme
+import com.example.core.design.theme.VisionAppTheme
 import com.example.core.design.theme.Grey10
 import com.example.core.design.theme.Grey60
 import com.example.core.design.theme.Grey80
@@ -118,7 +118,7 @@ fun SearchBar(
 @Preview(showBackground = true)
 @Composable
 private fun SearchBarPreview() {
-    ExampleTheme {
+    VisionAppTheme {
         Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
             SearchBar(
                 value = "",

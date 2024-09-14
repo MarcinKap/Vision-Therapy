@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.core.design.R
-import com.example.core.design.theme.ExampleTheme
+import com.example.core.design.theme.VisionAppTheme
 import com.example.feature.start.startscreen.StartNavigationEvent
 import com.example.feature.start.startscreen.StartNavigator
 import com.example.feature.start.startscreen.StartViewModel
@@ -85,14 +85,6 @@ internal fun StartScreenContent(
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-private fun StartScreenContentPreview() {
-    ExampleTheme {
-        StartScreenContent({})
-    }
-}
-
 @Composable
 private fun BottomButton(onClick: () -> Unit) {
     Button(
@@ -120,5 +112,13 @@ internal fun StartNavigationHandler(
             StartNavigationEvent.Idle -> Unit
             StartNavigationEvent.ShowMainScreen -> navigator.showMainScreen()
         }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun StartScreenContentPreview() {
+    VisionAppTheme {
+        StartScreenContent {}
     }
 }

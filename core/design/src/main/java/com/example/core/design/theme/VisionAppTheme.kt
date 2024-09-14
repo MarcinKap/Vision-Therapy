@@ -70,7 +70,7 @@ private val ExampleLightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun ExampleTheme(
+fun VisionAppTheme(
     isDarkTheme: Boolean = isSystemInDarkTheme(),
     isDynamicColor: Boolean = true,
     content: @Composable () -> Unit,

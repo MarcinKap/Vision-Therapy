@@ -30,7 +30,7 @@ import com.example.bottomnaviagtionbar.NavBarClickController
 import com.example.bottomnaviagtionbar.NavBarVisibilityController
 import com.example.bottomnaviagtionbar.ui.BottomNavigationBar
 import com.example.core.design.shadow.BottomShadow
-import com.example.core.design.theme.ExampleTheme
+import com.example.core.design.theme.VisionAppTheme
 import com.example.feature.calendar.calendar.destinations.CalendarScreenDestination
 import com.example.feature.customers.customers.destinations.CustomersScreenDestination
 import com.example.feature.tasks.tasks.destinations.TasksScreenDestination
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
                 val bottomSheetNavigator = remember { BottomSheetNavigator(sheetState = sheetState) }
                 navController = rememberNavController(bottomSheetNavigator)
 
-                ExampleTheme {
+                VisionAppTheme {
                     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
                     val currentNavigationItems by rememberUpdatedState(newValue = uiState.navigationBarItems)
                     val isNavBarVisible by navBarVisibility.isVisible().collectAsStateWithLifecycle(false)

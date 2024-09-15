@@ -31,7 +31,6 @@ include(
     ":core:testing:screenshots",
     ":core:testing:ui",
     ":core:translations",
-    ":data:product",
     ":data:work-schedule",
     ":feature:start",
     ":feature:therapies",

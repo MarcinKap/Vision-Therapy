@@ -32,6 +32,7 @@ include(
     ":core:testing:ui",
     ":core:translations",
     ":data:product",
+    ":data:work-schedule",
     ":feature:start",
     ":feature:therapies",
     ":feature:visits",
